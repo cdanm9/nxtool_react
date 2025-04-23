@@ -1,6 +1,6 @@
-// import React from "react";
-// import { Box } from "@material-ui/core";
+import React from "react";
+import { Box } from "@mui/material";
 
-// export default function NotFound() {
-//   return <Box>Not found</Box>;
-// }
+export default function NotFound() {
+  return <Box>Not found</Box>;
+}

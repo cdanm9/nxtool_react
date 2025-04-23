@@ -15,6 +15,7 @@
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-scripts": "^5.0.1",
+    "vercel": "^41.6.2",
     "web-vitals": "^4.2.4"
   },
   "devDependencies": {
@@ -23,7 +24,8 @@
     "npm-watch": "^0.9.0"
   },
   "scripts": {
-    "dev":"next dev --turbo",
+    "dev": "next dev --turbo",
+    "vercel-link":"vercel link",
     "next-build": "next build",
     "next-start": "next start",
     "next-lint": "next lint",
