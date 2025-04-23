@@ -2,3 +2,5 @@
 /node_modules/
 /resources/
 coretool/node_modules/
+coretool/.next
+coretool/coretool-content.zip

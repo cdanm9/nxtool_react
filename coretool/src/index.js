@@ -1,30 +1,14 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 import "./index.css";
-// import App from "./App";
-import DashboardPage from "pages/DashboardPage";
+import App from "./App";
 
-// const NAVIGATION = [
-//   {
-//     kind: 'header',
-//     title: 'Main Items',
-//   },
-//   {
-//     segment: 'page',
-//     title: 'Page',
-//     icon: <DashboardIcon />,
-//   }
-// ];
+const container = document.getElementById("root");
+const root = createRoot(container);
 
-ReactDOM.render(
-  // <React.StrictMode>
-  //   <NextAppProvider navigation={NAVIGATION} branding={BRANDING}>
-  <div className="App full-height">
-    <DashboardPage />   
-    </div>
-  //   </NextAppProvider>
-  // </React.StrictMode>,
-  ,
-  document.getElementById("root")
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
 );
 
