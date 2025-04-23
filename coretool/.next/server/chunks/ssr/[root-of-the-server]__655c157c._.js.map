@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 15, "column": 0}, "map": {"version":3,"sources":["file:///home/user/projects/tool_react/coretool/src/pages/NotFound.js"],"sourcesContent":["import React from \"react\";\nimport { Box } from \"@mui/material\";\n\nexport default function NotFound() {\n  return <Box>Not found</Box>;\n}\n"],"names":[],"mappings":";;;;AAAA;AACA;;;;AAEe,SAAS;IACtB,qBAAO,qKAAC,iLAAA,CAAA,MAAG;kBAAC;;;;;;AACd","debugId":null}}]
+}

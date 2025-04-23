@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 15, "column": 0}, "map": {"version":3,"sources":["file:///home/user/projects/tool_react/coretool/src/pages/DashboardPage.js"],"sourcesContent":["import * as React from 'react';\nimport Typography from '@mui/material/Typography';\n\nexport default function DashboardPage() {\n  return <Typography>Welcome to a page in the dashboard!</Typography>;\n}"],"names":[],"mappings":";;;;AAAA;AACA;;;;AAEe,SAAS;IACtB,qBAAO,qKAAC,6JAAA,CAAA,UAAU;kBAAC;;;;;;AACrB","debugId":null}}]
+}
