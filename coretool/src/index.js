@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 // import App from "./App";
-import DashboardPage from "./DashboardPage";
+import DashboardPage from "pages/DashboardPage";
 
 // const NAVIGATION = [
 //   {
@@ -19,7 +19,9 @@ import DashboardPage from "./DashboardPage";
 ReactDOM.render(
   // <React.StrictMode>
   //   <NextAppProvider navigation={NAVIGATION} branding={BRANDING}>
+  <div className="App full-height">
     <DashboardPage />   
+    </div>
   //   </NextAppProvider>
   // </React.StrictMode>,
   ,
