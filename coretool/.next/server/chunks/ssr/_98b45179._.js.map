@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 24, "column": 0}, "map": {"version":3,"sources":["file:///home/user/projects/tool_react/coretool/src/app/%28dashboard%29/page.js"],"sourcesContent":["import * as React from 'react';\nimport Typography from '@mui/material/Typography';\nimport Link from 'next/link';\n\nexport default function HomePage() {\n  return (\n    <Typography>\n      Welcome to <Link href=\"https://mui.com/toolpad/core/introduction\">Toolpad Core!</Link>\n    </Typography>\n  );\n}\n"],"names":[],"mappings":";;;;AAAA;AACA;AACA;;;;;AAEe,SAAS;IACtB,qBACE,8OAAC,oKAAA,CAAA,UAAU;;YAAC;0BACC,8OAAC,4JAAA,CAAA,UAAI;gBAAC,MAAK;0BAA4C;;;;;;;;;;;;AAGxE","debugId":null}}]
+}
