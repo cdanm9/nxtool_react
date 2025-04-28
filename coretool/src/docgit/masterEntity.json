@@ -1,0 +1,16 @@
+{
+    "userMenu":[
+        {
+            "name":"About",
+            "code":"ABT",
+            "description":"About Page"
+        },
+        {
+            "name":"Sign Out",
+            "code":"SO",
+            "description":"Sign Out Page"
+
+        }
+    ]
+
+}
