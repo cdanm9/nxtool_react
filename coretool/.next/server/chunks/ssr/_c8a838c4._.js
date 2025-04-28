@@ -259,6 +259,15 @@ function RootLayout({ children }) {
                         columnNumber: 37
                     }, void 0),
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$toolpad$2f$core$2f$esm$2f$nextjs$2f$NextAppProvider$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["NextAppProvider"], {
+                        branding: {
+                            logo: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$SideBarIconApprove$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                                fileName: "[project]/src/app/layout.js",
+                                lineNumber: 53,
+                                columnNumber: 24
+                            }, void 0),
+                            title: 'Purchase Order Library',
+                            homeUrl: '/toolpad/core/introduction'
+                        },
                         navigation: NAVIGATION,
                         children: children
                     }, void 0, false, {

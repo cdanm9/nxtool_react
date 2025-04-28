@@ -17,8 +17,8 @@ const NAVIGATION = [
     title: 'Purchase Order',
   },
   {
-    segment: '',
-    title: 'Dashboard',
+    segment: '',   
+    title: 'Dashboard',  
     icon: <SideBarIconDashboard iconJsonName='AnalyticsIcon' />,   
   },
   {
@@ -49,7 +49,11 @@ export default function RootLayout({ children }) {
       <body>
         <AppRouterCacheProvider options={{ enableCssLayer: true }}>
           <React.Suspense fallback={<LinearProgress />}>
-            <NextAppProvider navigation={NAVIGATION}>
+            <NextAppProvider branding={{
+                  logo:<SideBarIconApprove/>,
+                  title: 'Purchase Order Library',
+                  homeUrl: '/toolpad/core/introduction',
+                }} navigation={NAVIGATION}>    
               {children}
             </NextAppProvider>
           </React.Suspense>
