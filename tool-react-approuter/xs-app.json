@@ -1,4 +1,7 @@
 {
   "authenticationMethod": "none",
-  "routes": []
+  "welcomeFile":"/coretool",
+  "routes": [
+    
+  ]
 }

@@ -1,51 +1,65 @@
-// import * as React from 'react';
-// import Typography from '@mui/material/Typography';
-// import Link from 'next/link';
-
-// export default function HomePage() {
-//   return (
-//     <Typography>
-//       Welcome to <Link href="https://mui.com/toolpad/core/introduction">Toolpad Core!</Link>
-//     </Typography>
-//   );
-// }
 'use client'
-// import * as React from 'react';
-import { Grid, Box } from '@mui/material';
-// import PageContainer from '@/app/(DashboardLayout)/components/container/PageContainer';
-// components
-import SalesOverview from 'components/dashboard/SalesOverview';
-import YearlyBreakup from 'components/dashboard/YearlyBreakup';   
-import MonthlyEarnings from 'components/dashboard/MonthlyEarnings';
+import Grid from '@mui/material/Grid';
+
+// chart components
+import MainCard from 'components/dashboard/cards/MainCard';
+import AnalyticsCard from 'components/dashboard/cards/AnalyticsCard';  
+import KPICard from 'components/dashboard/cards/KPICard';  
+// import IntegrationCard from 'components/dashboard/cards/IntegrationCard';  
+import SingleIntegrationCard from 'components/dashboard/cards/SingleIntegrationCard';  
+
+// import SimpleLineChart from 'components/dashboard/charts/SimpleLineChart';  
+import BasicBars from 'components/dashboard/charts/BasicBars';  
+// import BasicPie from 'components/dashboard/charts/BasicPie';  
+import PieChartWithCenterLabel from 'components/dashboard/charts/PieChartWithCenterLabel';  
+import BasicLinearLineChart from 'components/dashboard/charts/BasicLinearLineChart';  
+import HorizontalBars from 'components/dashboard/charts/HorizontalBars';  
+
+// assets
 
 const Dashboard = () => {
   return (
-      <Box>
-        <Grid container spacing={3}>
-          <Grid item xs={12} lg={8}>
-            <SalesOverview /> 
-          </Grid>
-          <Grid item xs={12} lg={4}>
-            <Grid container spacing={3}>
-              <Grid item xs={12}>
-                <YearlyBreakup />
-              </Grid>
-              <Grid item xs={12}>
-                <MonthlyEarnings />
-              </Grid>
-            </Grid>
-          </Grid>
-          <Grid item xs={12} lg={4}>
-            {/* <RecentTransactions /> */}
-          </Grid>
-          <Grid item xs={12} lg={8}>
-            {/* <ProductPerformance /> */}
-          </Grid>
-          <Grid item xs={12}>
-            {/* <Blog /> */}
-          </Grid>
-        </Grid>
-      </Box>
+    
+    <Grid container rowSpacing={4.5} columnSpacing={2.75}>
+      {/* row 1 */}
+      <Grid size={{ xs: 12, sm: 6, md: 4, lg: 3 }}>
+        {/* <AnalyticsCard title="Open PO" count="52,00,00" percentage='In INR' extra="46" /> */}
+        <KPICard type="total" count={26} label="Total Received" color="#d1c4e9" gradient="linear-gradient(135deg, #7e57c2, #9575cd)" />
+      </Grid>
+      <Grid size={{ xs: 12, sm: 6, md: 4, lg: 3 }}>
+        {/* <AnalyticsCard title="Open GR" count="72,00,00" percentage='In INR' extra="83" /> */}
+        <KPICard type="completed" count={2} label="Completed" color="#a5d6a7" gradient="linear-gradient(135deg, #43a047, #66bb6a)"  />
+      </Grid>
+      <Grid size={{ xs: 12, sm: 6, md: 4, lg: 3 }}>
+        {/* <AnalyticsCard title="Open Invoice" count="92,00,00" percentage='In INR' isLoss color="warning" extra="93" />
+         */}
+         <KPICard type="progress" count={24} label="In Progress" color="#ffcc80" gradient="linear-gradient(135deg, #fb8c00, #ffa726)"  />
+      </Grid>
+      <Grid size={{ xs: 12, sm: 6, md: 4, lg: 3 }}>
+        {/* <AnalyticsCard title="Total Sales" count="35,078" percentage='In INR' isLoss color="warning" extra="63" /> */}
+        <KPICard type="rejected" count={0} label="Rejected" color="#ef9a9a" gradient="linear-gradient(135deg, #e53935, #ef5350)"  />
+      </Grid>
+      <Grid sx={{ display: { sm: 'none', md: 'block', lg: 'none' } }} size={{ md: 8 }} />
+      {/* <IntegrationCard/> */}
+      {/* row 2 */}
+      
+      <Grid size={6} >
+        <BasicBars/>   
+      </Grid>
+      <Grid size={6} >
+        {/* <BasicPie/> */}
+        <PieChartWithCenterLabel/>
+      </Grid>
+      {/* row 3 */}  
+      
+      <Grid size={6} >
+        <BasicLinearLineChart/>   
+      </Grid>
+      <Grid size={6} >
+        <HorizontalBars/>
+      </Grid>
+      {/* row 4 */}
+    </Grid>
   )
 }
 

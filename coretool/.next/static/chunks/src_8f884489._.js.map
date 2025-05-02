@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 12, "column": 0}, "map": {"version":3,"sources":["file:///home/user/projects/tool_react/coretool/src/components/AniDashIcon.js"],"sourcesContent":["'use client'\nimport { useEffect, useRef } from 'react';\nimport { Player } from '@lordicon/react';\n\nconst ICON = require('assets/AniDashLightIcon.json');\n\nexport default function AniDashIcon() {    \n  const playerRef = useRef(null);\n  \n    useEffect(() => {\n        playerRef.current?.playFromBeginning();\n    }, [])\n\n    return (\n        <Player \n            ref={playerRef} \n            icon={ ICON }\n            onComplete={() => playerRef.current?.playFromBeginning()}\n        />\n    );\n}"],"names":[],"mappings":";;;;AACA;AACA;AAAA;;;AAFA;;;AAIA,MAAM;AAES,SAAS;;IACtB,MAAM,YAAY,CAAA,GAAA,6JAAA,CAAA,SAAM,AAAD,EAAE;IAEvB,CAAA,GAAA,6JAAA,CAAA,YAAS,AAAD;iCAAE;YACN,UAAU,OAAO,EAAE;QACvB;gCAAG,EAAE;IAEL,qBACI,6LAAC,wJAAA,CAAA,SAAM;QACH,KAAK;QACL,MAAO;QACP,YAAY,IAAM,UAAU,OAAO,EAAE;;;;;;AAGjD;GAdwB;KAAA","debugId":null}}]
-}

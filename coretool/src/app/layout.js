@@ -1,3 +1,4 @@
+'use client'
 import * as React from 'react';
 // import { hydrateRoot } from 'react-dom/client';
 import { NextAppProvider } from '@toolpad/core/nextjs';
@@ -10,6 +11,7 @@ import SideBarIcon from 'components/SideBarIcon';
 import SideBarIconDashboard from 'components/SideBarIconDashboard';
 import SideBarIconReport from 'components/SideBarIconReport';
 import SideBarIconApprove from 'components/SideBarIconApprove';   
+
 
 const NAVIGATION = [
   {
@@ -44,6 +46,38 @@ const NAVIGATION = [
 ];
 
 export default function RootLayout({ children }) {
+
+
+
+  // const { window } = props;
+
+  const [session, setSession] = React.useState({
+    user: {
+      name: 'Chandan Moolya',
+      email: 'dan.moolya@gmail.com',
+      image: '',
+    },
+  });
+
+  const authentication = React.useMemo(() => {
+    return {
+      signIn: () => {
+        setSession({
+          user: {
+            name: 'Chandan Moolya',
+            email: 'dan.moolya@gmail.com',
+            image: '',
+          },
+        });
+      },
+      signOut: () => {
+        setSession(null);
+      },
+    };
+  }, []);
+
+  // const demoWindow = window !== undefined ? window() : undefined;
+
   return (
     <html lang="en" data-toolpad-color-scheme="light">
       <body>
@@ -51,9 +85,11 @@ export default function RootLayout({ children }) {
           <React.Suspense fallback={<LinearProgress />}>
             <NextAppProvider branding={{
                   logo:<SideBarIconApprove/>,
-                  title: 'Purchase Order Library',
+                  title: 'Vendor Portal',
                   homeUrl: '/toolpad/core/introduction',
-                }} navigation={NAVIGATION}>    
+                }} navigation={NAVIGATION}
+                session={session}
+                authentication={authentication}>    
               {children}
             </NextAppProvider>
           </React.Suspense>

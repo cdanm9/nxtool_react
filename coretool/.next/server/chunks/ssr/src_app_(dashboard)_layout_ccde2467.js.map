@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///home/user/projects/tool_react/coretool/src/app/%28dashboard%29/layout.js"],"sourcesContent":["import React from 'react';\nimport { DashboardLayout } from '@toolpad/core/DashboardLayout';\nimport { PageContainer } from '@toolpad/core/PageContainer';\n\nexport default function Layout(props) {\n  return (\n    <DashboardLayout>\n      <PageContainer>{props.children}</PageContainer>\n    </DashboardLayout>\n  );\n}\n"],"names":[],"mappings":";;;;AAAA;;;;;;;;;;;;;;;AAIe,SAAS,OAAO,KAAK;IAClC,qBACE,8OAAC;kBACC,cAAA,8OAAC;sBAAe,MAAM,QAAQ;;;;;;;;;;;AAGpC","debugId":null}}]
-}

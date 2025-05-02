@@ -23,7 +23,7 @@ const YearlyBreakup = () => {
       toolbar: {
         show: false
       },
-      height: 155
+      height: 250  
     },
     colors: [primary, primarylight, "#F9F9FD"],
     plotOptions: {
@@ -116,7 +116,7 @@ const YearlyBreakup = () => {
             options={optionscolumnchart}
             series={seriescolumnchart}
             type="donut"
-            height={150}
+            height={100}
             width={"100%"}
           />
         </Grid>
