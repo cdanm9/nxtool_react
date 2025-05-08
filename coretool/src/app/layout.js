@@ -11,6 +11,7 @@ import SideBarIcon from 'components/SideBarIcon';
 import SideBarIconDashboard from 'components/SideBarIconDashboard';
 import SideBarIconReport from 'components/SideBarIconReport';
 import SideBarIconApprove from 'components/SideBarIconApprove';   
+import SideLayoutIcon from 'components/SideLayoutIcon';   
 
 
 const NAVIGATION = [
@@ -21,7 +22,7 @@ const NAVIGATION = [
   {
     segment: '',   
     title: 'Dashboard',  
-    icon: <SideBarIconDashboard iconJsonName='AnalyticsIcon' />,   
+    icon: <SideLayoutIcon iconJsonName='IconSideLayout' />,     
   },
   {
     segment: 'orders',
@@ -72,6 +73,7 @@ export default function RootLayout({ children }) {
       },
       signOut: () => {
         setSession(null);
+        window.location.href = '/coretool/do/logout';
       },
     };
   }, []);

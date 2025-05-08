@@ -1,6 +1,9 @@
 {
-  "authenticationMethod": "none",
+  "authenticationMethod": "route",
   "welcomeFile":"/coretool",
+  "logout": {
+    "logoutEndpoint": "/do/logout"
+  },
   "routes": [
     
   ]
